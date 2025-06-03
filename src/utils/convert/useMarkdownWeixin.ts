@@ -4,7 +4,7 @@ import hljs  from 'highlight.js'
 
 export const createMarkdownWeixinRenderer = () =>{
   const styleMap = {
-    p: 'font-size:14px;line-height:30px;margin:0 0 16px;padding:0;color:#4a4a4a',
+    p: 'font-size:14px;line-height:30px;margin:16px 0 16px 0;padding:0;color:#4a4a4a;',
     strong: 'font-weight: bold;',
     h1: 'font-size:22px;font-weight:bold;color:#222222;margin:24px 0 16px;padding:0;color:#f85f48',
     h2: 'font-size:20px;font-weight:bold;color:#222222;margin:20px 0 14px;padding:0;color:#f85f48',
@@ -19,7 +19,8 @@ export const createMarkdownWeixinRenderer = () =>{
     table_open: 'width:100%;border-collapse:collapse;margin:16px 0;',
     th: 'background:#f0f0f0;border:1px solid #ddd;padding:8px;text-align:left;',
     td: 'border:1px solid #ddd;padding:8px;text-align:left;font-size:14px;',
-    blockquote: 'background-color: #f1f7fc; border-left: 4px solid #2b6cb0;padding: 12px 16px;margin: 16px 0;color: #333;font-size: 16px;line-height: 1.75;font-style: normal;quotes:none',
+    //blockquote: 'padding: 16px 20px;background-color: #f1f7fc; border-left: 4px solid #2b6cb0;margin: 16px 0;color: #333;font-size: 16px;line-height: 1.8;font-style: normal;quotes:none',
+    blockquote: 'background-color: #f1f7fc;border-left: 4px solid #2b6cb0;padding: 1px 20px;margin: 2px 0;font-size: 14px;line-height: 1.6;font-style: normal;color: #333;quotes:none',
   }
 
   const md = new MarkdownIt({
